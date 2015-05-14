@@ -5,7 +5,7 @@ relationship gets merged with a scope from another model
 
 Eg, in this app
 
-Post.viewers.merge(User.nonadmin).to_a
+Post.viewers.merge(Person.nonadmin).to_a
 
 will result in invalid SQL. There is a sample script to demo this in the root called
 problem.rb
